@@ -78,3 +78,9 @@ body{background-color:#f3ede5;background-image:radial-gradient(ellipse at 4% 12%
 .finale.active .fh1{animation:finale-float 3s .3s ease-out infinite;--dx:-110px;--dy:-98px}.finale.active .fh2{animation:finale-float 3.4s .7s ease-out infinite;--dx:85px;--dy:-110px}.finale.active .fh3{animation:finale-float 4s .4s ease-out infinite;--dx:-63px;--dy:-130px}.finale.active .fh4{animation:finale-float 3.3s 1.4s ease-out infinite;--dx:122px;--dy:-45px}.finale.active .fh5{animation:finale-float 3.6s 1s ease-out infinite;--dx:-132px;--dy:-40px}
 @keyframes finale-bloom{to{opacity:1;transform:translate(-50%,-50%) scale(1)}}@keyframes finale-float{0%{opacity:0;transform:translate(0,0) scale(.6)}25%{opacity:.65}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.05)}}
 @media(prefers-reduced-motion:reduce){.intro.opening .envelope,.intro.opening .envelope-letter,.intro.opening .envelope-flap,.finale.active .finale-heart{animation:none;transition:none}.finale .main-heart{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+
+/* Vector decorations: no platform-dependent emoji glyphs */
+.line-star{display:inline-block;width:24px;height:24px;vertical-align:middle;color:#ad7880;flex-shrink:0}.ornament{display:inline-flex;align-items:center;justify-content:center;gap:22px;letter-spacing:normal}.ornament .line-star{width:26px;height:26px}.ornament-heart{color:#a65e6a;font:30px/1 Georgia,serif}.decor .line-star{width:1em;height:1em}.mini-flower .line-star{width:27px;height:27px}.open-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px}.btn-arrow{width:18px;height:18px;flex:0 0 auto;color:#fff}.open-btn span{padding-left:0}
+
+/* Personal signature below the animated finale. */
+.final-signature{position:relative;z-index:1;margin:-6px auto 80px;padding:0 18px;text-align:center;color:#a55d6e;font:italic 500 clamp(32px,8.4vw,49px)/1.25 'Cormorant Garamond',Georgia,serif;}
