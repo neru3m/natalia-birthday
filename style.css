@@ -1,0 +1,80 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f3ede5;color:#42342e;font-family:Manrope,Arial,sans-serif;overflow-x:hidden}.paper-grain{position:fixed;inset:0;z-index:30;pointer-events:none;opacity:.15;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.33'/%3E%3C/svg%3E")}.intro{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:#f3ede5;transition:opacity .9s ease,visibility .9s}.intro.is-hidden{opacity:0;visibility:hidden;pointer-events:none}.intro-inner{text-align:center;padding:25px;width:min(100%,470px)}.ornament{color:#a65e6a;font-size:24px;letter-spacing:10px}.eyebrow{text-transform:uppercase;font-size:10px;letter-spacing:.38em;color:#a06d65;margin-top:48px}.intro h1{font:500 clamp(68px,16vw,105px)/.91 'Cormorant Garamond',Georgia,serif;margin:16px 0 32px;letter-spacing:-.04em}.intro h1 em{display:block;color:#a55d6e;font-weight:400}.line{height:1px;background:#bb9993;width:72px;margin:0 auto 35px}.open-btn{border:1px solid #ad737b;background:#ad737b;color:white;padding:19px 24px;border-radius:100px;font:600 12px Manrope,Arial,sans-serif;letter-spacing:.03em;cursor:pointer;transition:transform .2s,background .2s}.open-btn span{padding-left:20px;font-size:18px}.open-btn:active{transform:scale(.97)}.intro-bottom{position:absolute;bottom:38px;color:#a65e6a;font-size:26px}#content{max-width:680px;margin:0 auto;padding:25px 20px 90px}.page{min-height:90svh;display:flex;align-items:center;justify-content:center;padding:35px 0 65px}.photo-frame{width:100%;background:#fff;padding:9px;box-shadow:0 12px 35px #674c3e1a;transform:rotate(-1deg)}.photo-frame img{display:block;width:100%;height:auto}.cover-frame{max-width:430px}.second-page{min-height:86svh}.photo-postcard{max-width:420px;transform:rotate(1.5deg);padding:12px}.letter-block{position:relative;margin:40px 0 110px;padding:65px 17px 66px;border-top:1px solid #c9b9aa;border-bottom:1px solid #c9b9aa}.mini-flower{display:block;color:#ae6979;font-size:26px;text-align:center;margin:0 0 25px}.bottom-flower{margin:28px 0 0}.letter-text p,.collage-copy p{font:400 clamp(18px,4.5vw,23px)/1.5 'Cormorant Garamond',Georgia,serif;margin:0 0 24px}.letter-text p:last-child,.collage-copy p:last-child{margin-bottom:0}.collage{padding:55px 0 95px}.collage-stack{position:relative;min-height:clamp(380px,110vw,600px);margin:0 auto 40px;max-width:570px}.polaroid{position:absolute;margin:0;padding:9px 9px 25px;background:#fff;box-shadow:0 14px 32px #392c252b;width:78%;overflow:hidden}.polaroid img{width:100%;aspect-ratio:1.2/1;object-fit:cover;display:block}.pol-a{top:0;left:0;transform:rotate(-6deg)}.pol-b{top:39%;right:0;transform:rotate(7deg)}.hand-heart{position:absolute;font:70px 'Cormorant Garamond',serif;color:#b46775;bottom:2%;left:7%;transform:rotate(-15deg);z-index:2}.collage-copy{padding:15px 8px;border-left:2px solid #b67f86;padding-left:20px}.short-quote{padding:38px 15px 15px;text-align:center}.short-quote:before{content:'♡';display:block;color:#a96371;font:38px 'Cormorant Garamond',serif;margin-bottom:16px}.short-quote p{font:italic 500 clamp(32px,8.1vw,52px)/1.12 'Cormorant Garamond',Georgia,serif;color:#a35b6a;margin:0}.winter-collage{padding-bottom:30px}.reveal{opacity:0;translate:0 32px;transition:opacity .9s ease,translate .9s ease}.reveal.visible{opacity:1;translate:0 0}.polaroid.reveal{transition-delay:.08s}.pol-b.reveal{transition-delay:.25s}@media (min-width:650px){#content{padding-inline:40px}.collage-stack{min-height:575px}.polaroid{width:70%}.pol-b{top:36%}.letter-block{padding-inline:55px}.collage-copy{margin-inline:55px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;translate:none;transition:none}.intro{transition:none}}
+/* Decorative scrapbook details, always behind the photos and lettering. */
+body{background-color:#f3ede5;background-image:radial-gradient(ellipse at 4% 12%,#e9d0ca88,transparent 25%),radial-gradient(ellipse at 93% 38%,#e0d9bd66,transparent 26%),radial-gradient(ellipse at 12% 74%,#eed4d088,transparent 30%),repeating-linear-gradient(145deg,transparent 0px,transparent 46px,#c9a99d0c 47px,transparent 48px)}
+.floating-decoration{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;color:#af7180;opacity:.64}
+.decor{position:absolute;display:block;font-family:Georgia,serif;animation:float-decoration 8s ease-in-out infinite alternate;user-select:none}
+.d1{top:8%;left:5%;font-size:45px}.d2{top:22%;right:5%;font-size:55px;animation-delay:-3s}.d3{top:43%;left:3%;font-size:35px;animation-delay:-5s}.d4{top:64%;right:4%;font-size:31px;animation-delay:-1s}.d5{top:84%;left:6%;font-size:43px;animation-delay:-4s}.d6{top:94%;right:8%;font-size:53px;animation-delay:-2s}
+@keyframes float-decoration{from{translate:0 -6px;rotate:-7deg;opacity:.52}to{translate:0 14px;rotate:9deg;opacity:.85}}
+#content{position:relative;z-index:1}.intro{background:radial-gradient(ellipse at 20% 30%,#f2d9d2 0%,transparent 55%),radial-gradient(ellipse at 90% 75%,#e9e1ce 0%,transparent 47%),#f3ede5}
+.intro:before,.intro:after{position:absolute;pointer-events:none;color:#bf8d8c;font:56px Georgia,serif;opacity:.7;animation:float-decoration 7s ease-in-out infinite alternate}
+.intro:before{content:'✧';top:12%;left:9%}.intro:after{content:'♡';bottom:14%;right:10%;animation-delay:-3s}
+/* Each photo gets a distinct scroll-entry animation; text alternates between two effects. */
+.reveal{translate:none;opacity:0;transition:none;will-change:opacity,translate,scale,filter}
+.reveal.visible{opacity:1;translate:none}
+.reveal.photo-pop{scale:.77;filter:blur(3px)}.reveal.photo-pop.visible{animation:photo-pop 1.05s cubic-bezier(.18,.9,.24,1.12) both}
+.reveal.photo-left{translate:-75px 38px;filter:blur(4px)}.reveal.photo-left.visible{animation:photo-left 1.05s cubic-bezier(.2,.75,.24,1) both}
+.reveal.photo-right{translate:75px 40px;filter:blur(3px)}.reveal.photo-right.visible{animation:photo-right 1.08s cubic-bezier(.2,.75,.24,1) both}
+.reveal.photo-float{translate:0 85px;scale:.91}.reveal.photo-float.visible{animation:photo-float 1.2s cubic-bezier(.16,1,.3,1) both}
+.reveal.text-rise{translate:0 45px}.reveal.text-rise.visible{animation:text-rise 1s ease-out both}
+.reveal.text-soft{scale:.93;filter:blur(10px)}.reveal.text-soft.visible{animation:text-soft 1.2s ease-out both}
+.reveal.text-left{translate:-37px 15px;filter:blur(4px)}.reveal.text-left.visible{animation:text-left 1s ease-out both}
+@keyframes photo-pop{0%{opacity:0;scale:.77;filter:blur(3px)}68%{opacity:1;scale:1.035;filter:blur(0)}100%{opacity:1;scale:1;filter:blur(0)}}
+@keyframes photo-left{from{opacity:0;translate:-75px 38px;filter:blur(4px)}to{opacity:1;translate:0 0;filter:blur(0)}}
+@keyframes photo-right{from{opacity:0;translate:75px 40px;filter:blur(3px)}to{opacity:1;translate:0 0;filter:blur(0)}}
+@keyframes photo-float{from{opacity:0;translate:0 85px;scale:.91}to{opacity:1;translate:0 0;scale:1}}
+@keyframes text-rise{from{opacity:0;translate:0 45px}to{opacity:1;translate:0 0}}
+@keyframes text-soft{from{opacity:0;scale:.93;filter:blur(10px)}to{opacity:1;scale:1;filter:blur(0)}}
+@keyframes text-left{from{opacity:0;translate:-37px 15px;filter:blur(4px)}to{opacity:1;translate:0 0;filter:blur(0)}}
+@media(prefers-reduced-motion:reduce){.decor,.intro:before,.intro:after{animation:none}.reveal,.reveal.visible,.reveal.photo-pop,.reveal.photo-left,.reveal.photo-right,.reveal.photo-float,.reveal.text-rise,.reveal.text-soft,.reveal.text-left{opacity:1;translate:none;scale:1;filter:none;animation:none!important}}
+
+/* Larger, fully visible images in mobile scrapbook collages. */
+@media(max-width:649px){
+ #content{padding-left:12px;padding-right:12px}
+ .collage{padding-top:45px;padding-bottom:80px}
+ .collage-stack{min-height:0;max-width:none;margin:0 auto 26px;display:flex;flex-direction:column;align-items:center;gap:24px}
+ .polaroid{position:relative;top:auto;right:auto;left:auto;bottom:auto;width:95%;padding:8px 8px 17px;overflow:visible;flex:none}
+ .polaroid img{aspect-ratio:auto;height:auto;object-fit:contain}
+ .pol-a{align-self:flex-start;transform:rotate(-2deg)}
+ .pol-b{align-self:flex-end;transform:rotate(2deg)}
+ .hand-heart{bottom:calc(50% - 20px);left:auto;right:0;font-size:43px}
+ .collage-copy{padding-right:12px}
+ .photo-frame{width:100%;max-width:none}
+ .cover-frame,.photo-postcard{max-width:100%}
+}
+/* All photos can be opened at native aspect ratio. */
+.photo-frame img,.polaroid img{cursor:zoom-in}
+.photo-frame img:focus-visible,.polaroid img:focus-visible{outline:3px solid #a55d6e;outline-offset:4px}
+.photo-lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:62px 12px 64px;background:rgba(20,17,19,.95)}
+.photo-lightbox.is-open{display:flex}
+.photo-lightbox img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;box-shadow:0 10px 50px #0005}
+.photo-lightbox button{position:absolute;display:grid;place-items:center;border:0;border-radius:50%;width:46px;height:46px;color:#fff;background:#ffffff27;cursor:pointer;font:32px/1 Arial,sans-serif;touch-action:manipulation}
+.photo-lightbox button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.photo-lightbox .lb-close{right:15px;top:max(12px,env(safe-area-inset-top));font-size:30px}
+.photo-lightbox .lb-prev{left:10px;top:50%;transform:translateY(-50%)}
+.photo-lightbox .lb-next{right:10px;top:50%;transform:translateY(-50%)}
+.photo-lightbox .lb-count{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);font:12px Manrope,Arial,sans-serif;color:#fff9;letter-spacing:.12em}
+@media(prefers-reduced-motion:reduce){.photo-lightbox{scroll-behavior:auto}}
+
+/* Intro: a paper envelope opens before revealing the saved photo story. */
+.intro-inner{position:relative}.envelope{position:relative;width:min(66vw,240px);height:148px;margin:0 auto 24px;perspective:750px;filter:drop-shadow(0 10px 18px #754f4930)}
+.envelope-back,.envelope-front,.envelope-flap,.envelope-letter{position:absolute;inset:0}
+.envelope-back{background:#d3a6a0;border-radius:6px}
+.envelope-letter{z-index:1;inset:12px 19px 15px;background:#fff9f1;border-radius:3px;display:grid;place-items:center;color:#ac707c;font:50px 'Cormorant Garamond',serif;transition:transform .85s cubic-bezier(.2,.8,.2,1) .35s}
+.envelope-front{z-index:3;background:#e6beb5;clip-path:polygon(0 0,50% 49%,100% 0,100% 100%,0 100%);border-radius:4px}
+.envelope-flap{z-index:4;background:#c48f8c;clip-path:polygon(0 0,100% 0,50% 76%);transform-origin:50% 0;transition:transform .75s ease;backface-visibility:hidden}
+.envelope-seal{position:absolute;z-index:5;left:50%;top:48%;transform:translate(-50%,-50%);border-radius:50%;width:34px;height:34px;display:grid;place-items:center;background:#9e6371;color:#fff;font-size:25px;transition:opacity .2s}
+.intro.opening .envelope-flap{transform:rotateX(180deg);z-index:0}.intro.opening .envelope-seal{opacity:0}.intro.opening .envelope-letter{transform:translateY(-105px) scale(1.08)}.intro.opening .envelope{animation:envelope-exit .55s ease 1s forwards}
+@keyframes envelope-exit{to{opacity:0;transform:translateY(40px) scale(1.06)}}
+/* Each photo builds into place with a little organic overshoot. */
+.polaroid.photo-pop.visible{animation:photo-pop 1.2s cubic-bezier(.16,1,.3,1) both}.polaroid.photo-left.visible{animation:photo-left 1.2s cubic-bezier(.16,1,.3,1) both}.polaroid.photo-right.visible{animation:photo-right 1.2s cubic-bezier(.16,1,.3,1) both}.polaroid.photo-float.visible{animation:photo-float 1.25s cubic-bezier(.16,1,.3,1) both}
+.polaroid.pol-b.reveal.visible{animation-delay:.22s}.collage-copy.reveal.visible,.short-quote.reveal.visible{animation-delay:.14s}
+/* Parallax is confined to background decorations, never touches image position. */
+.decor{transform:translate3d(0,var(--parallax-y,0px),0)}
+/* Purely decorative ending: no additional words. */
+.finale{position:relative;z-index:1;width:min(100%,680px);height:215px;margin:0 auto;overflow:hidden;display:grid;place-items:center;pointer-events:none}
+.finale:before,.finale:after{content:'';position:absolute;top:45%;width:29%;height:1px;background:linear-gradient(90deg,transparent,#c29b98)}.finale:before{left:8%}.finale:after{right:8%;transform:rotate(180deg)}
+.finale-heart{position:absolute;color:#b27885;opacity:0}.main-heart{font:100px 'Cormorant Garamond',serif;left:50%;top:42%;transform:translate(-50%,-50%) scale(.5)}
+.finale.active .main-heart{animation:finale-bloom 1.8s ease-out forwards}.fh1,.fh2,.fh3,.fh4,.fh5{font:35px Georgia,serif;left:50%;top:50%}
+.finale.active .fh1{animation:finale-float 3s .3s ease-out infinite;--dx:-110px;--dy:-98px}.finale.active .fh2{animation:finale-float 3.4s .7s ease-out infinite;--dx:85px;--dy:-110px}.finale.active .fh3{animation:finale-float 4s .4s ease-out infinite;--dx:-63px;--dy:-130px}.finale.active .fh4{animation:finale-float 3.3s 1.4s ease-out infinite;--dx:122px;--dy:-45px}.finale.active .fh5{animation:finale-float 3.6s 1s ease-out infinite;--dx:-132px;--dy:-40px}
+@keyframes finale-bloom{to{opacity:1;transform:translate(-50%,-50%) scale(1)}}@keyframes finale-float{0%{opacity:0;transform:translate(0,0) scale(.6)}25%{opacity:.65}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.05)}}
+@media(prefers-reduced-motion:reduce){.intro.opening .envelope,.intro.opening .envelope-letter,.intro.opening .envelope-flap,.finale.active .finale-heart{animation:none;transition:none}.finale .main-heart{opacity:1;transform:translate(-50%,-50%) scale(1)}}
